@@ -8,8 +8,6 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="css/MarkerCluster.css">
-        <link rel="stylesheet" href="css/MarkerCluster.Default.css">
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
         <style>
@@ -37,7 +35,6 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="js/leaflet.markercluster.js"></script>
         <script src="data/DistritoAdministrativodoCampeche_2.js"></script>
         <script src="data/Lagoas_3.js"></script>
         <script src="data/readepescapredatriaporatuneiros_4.js"></script>
@@ -1401,12 +1398,8 @@
                 return L.marker(latlng, style_Fontesdguaantigas_27_0(feature));
             },
         });
-        var cluster_Fontesdguaantigas_27 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Fontesdguaantigas_27.addLayer(layer_Fontesdguaantigas_27);
-
         bounds_group.addLayer(layer_Fontesdguaantigas_27);
-        cluster_Fontesdguaantigas_27.addTo(map);
+        map.addLayer(layer_Fontesdguaantigas_27);
         function pop_DespejodeesgotonaLagoadaConceio_28(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1458,12 +1451,8 @@
                 return L.marker(latlng, style_DespejodeesgotonaLagoadaConceio_28_0(feature));
             },
         });
-        var cluster_DespejodeesgotonaLagoadaConceio_28 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_DespejodeesgotonaLagoadaConceio_28.addLayer(layer_DespejodeesgotonaLagoadaConceio_28);
-
         bounds_group.addLayer(layer_DespejodeesgotonaLagoadaConceio_28);
-        cluster_DespejodeesgotonaLagoadaConceio_28.addTo(map);
+        map.addLayer(layer_DespejodeesgotonaLagoadaConceio_28);
         function pop_RompimentodalagoaartificialdaCASAN_29(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1515,12 +1504,8 @@
                 return L.marker(latlng, style_RompimentodalagoaartificialdaCASAN_29_0(feature));
             },
         });
-        var cluster_RompimentodalagoaartificialdaCASAN_29 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_RompimentodalagoaartificialdaCASAN_29.addLayer(layer_RompimentodalagoaartificialdaCASAN_29);
-
         bounds_group.addLayer(layer_RompimentodalagoaartificialdaCASAN_29);
-        cluster_RompimentodalagoaartificialdaCASAN_29.addTo(map);
+        map.addLayer(layer_RompimentodalagoaartificialdaCASAN_29);
         function pop_Altaconcentraodebanhistas_30(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1572,12 +1557,8 @@
                 return L.marker(latlng, style_Altaconcentraodebanhistas_30_0(feature));
             },
         });
-        var cluster_Altaconcentraodebanhistas_30 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Altaconcentraodebanhistas_30.addLayer(layer_Altaconcentraodebanhistas_30);
-
         bounds_group.addLayer(layer_Altaconcentraodebanhistas_30);
-        cluster_Altaconcentraodebanhistas_30.addTo(map);
+        map.addLayer(layer_Altaconcentraodebanhistas_30);
         function pop_Altaconcentraoturstica_31(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1629,12 +1610,8 @@
                 return L.marker(latlng, style_Altaconcentraoturstica_31_0(feature));
             },
         });
-        var cluster_Altaconcentraoturstica_31 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Altaconcentraoturstica_31.addLayer(layer_Altaconcentraoturstica_31);
-
         bounds_group.addLayer(layer_Altaconcentraoturstica_31);
-        cluster_Altaconcentraoturstica_31.addTo(map);
+        map.addLayer(layer_Altaconcentraoturstica_31);
         function pop_Ranchodepescaincendiado_32(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1686,12 +1663,8 @@
                 return L.marker(latlng, style_Ranchodepescaincendiado_32_0(feature));
             },
         });
-        var cluster_Ranchodepescaincendiado_32 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Ranchodepescaincendiado_32.addLayer(layer_Ranchodepescaincendiado_32);
-
         bounds_group.addLayer(layer_Ranchodepescaincendiado_32);
-        cluster_Ranchodepescaincendiado_32.addTo(map);
+        map.addLayer(layer_Ranchodepescaincendiado_32);
         function pop_Lanamentodeesgoto_33(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1743,12 +1716,8 @@
                 return L.marker(latlng, style_Lanamentodeesgoto_33_0(feature));
             },
         });
-        var cluster_Lanamentodeesgoto_33 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Lanamentodeesgoto_33.addLayer(layer_Lanamentodeesgoto_33);
-
         bounds_group.addLayer(layer_Lanamentodeesgoto_33);
-        cluster_Lanamentodeesgoto_33.addTo(map);
+        map.addLayer(layer_Lanamentodeesgoto_33);
         function pop_AntigoPaubrasil_34(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1800,12 +1769,8 @@
                 return L.marker(latlng, style_AntigoPaubrasil_34_0(feature));
             },
         });
-        var cluster_AntigoPaubrasil_34 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_AntigoPaubrasil_34.addLayer(layer_AntigoPaubrasil_34);
-
         bounds_group.addLayer(layer_AntigoPaubrasil_34);
-        cluster_AntigoPaubrasil_34.addTo(map);
+        map.addLayer(layer_AntigoPaubrasil_34);
         function pop_Vendasmercadosmaiscitados_35(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1857,12 +1822,8 @@
                 return L.marker(latlng, style_Vendasmercadosmaiscitados_35_0(feature));
             },
         });
-        var cluster_Vendasmercadosmaiscitados_35 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Vendasmercadosmaiscitados_35.addLayer(layer_Vendasmercadosmaiscitados_35);
-
         bounds_group.addLayer(layer_Vendasmercadosmaiscitados_35);
-        cluster_Vendasmercadosmaiscitados_35.addTo(map);
+        map.addLayer(layer_Vendasmercadosmaiscitados_35);
         function pop_Outrasescolascolgios_36(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1914,12 +1875,8 @@
                 return L.marker(latlng, style_Outrasescolascolgios_36_0(feature));
             },
         });
-        var cluster_Outrasescolascolgios_36 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Outrasescolascolgios_36.addLayer(layer_Outrasescolascolgios_36);
-
         bounds_group.addLayer(layer_Outrasescolascolgios_36);
-        cluster_Outrasescolascolgios_36.addTo(map);
+        map.addLayer(layer_Outrasescolascolgios_36);
         function pop_ColgioBrigadeiroEduardoGomez_37(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1971,12 +1928,8 @@
                 return L.marker(latlng, style_ColgioBrigadeiroEduardoGomez_37_0(feature));
             },
         });
-        var cluster_ColgioBrigadeiroEduardoGomez_37 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_ColgioBrigadeiroEduardoGomez_37.addLayer(layer_ColgioBrigadeiroEduardoGomez_37);
-
         bounds_group.addLayer(layer_ColgioBrigadeiroEduardoGomez_37);
-        cluster_ColgioBrigadeiroEduardoGomez_37.addTo(map);
+        map.addLayer(layer_ColgioBrigadeiroEduardoGomez_37);
         function pop_PontedoOdorico_38(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2028,12 +1981,8 @@
                 return L.marker(latlng, style_PontedoOdorico_38_0(feature));
             },
         });
-        var cluster_PontedoOdorico_38 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_PontedoOdorico_38.addLayer(layer_PontedoOdorico_38);
-
         bounds_group.addLayer(layer_PontedoOdorico_38);
-        cluster_PontedoOdorico_38.addTo(map);
+        map.addLayer(layer_PontedoOdorico_38);
         function pop_Cabosubmarino_39(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2085,12 +2034,8 @@
                 return L.marker(latlng, style_Cabosubmarino_39_0(feature));
             },
         });
-        var cluster_Cabosubmarino_39 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Cabosubmarino_39.addLayer(layer_Cabosubmarino_39);
-
         bounds_group.addLayer(layer_Cabosubmarino_39);
-        cluster_Cabosubmarino_39.addTo(map);
+        map.addLayer(layer_Cabosubmarino_39);
         function pop_HangardoCampodeAviao_40(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2142,12 +2087,8 @@
                 return L.marker(latlng, style_HangardoCampodeAviao_40_0(feature));
             },
         });
-        var cluster_HangardoCampodeAviao_40 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_HangardoCampodeAviao_40.addLayer(layer_HangardoCampodeAviao_40);
-
         bounds_group.addLayer(layer_HangardoCampodeAviao_40);
-        cluster_HangardoCampodeAviao_40.addTo(map);
+        map.addLayer(layer_HangardoCampodeAviao_40);
         function pop_Cemitrio_41(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2199,12 +2140,8 @@
                 return L.marker(latlng, style_Cemitrio_41_0(feature));
             },
         });
-        var cluster_Cemitrio_41 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Cemitrio_41.addLayer(layer_Cemitrio_41);
-
         bounds_group.addLayer(layer_Cemitrio_41);
-        cluster_Cemitrio_41.addTo(map);
+        map.addLayer(layer_Cemitrio_41);
         function pop_IgrejadePedra_42(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2256,12 +2193,8 @@
                 return L.marker(latlng, style_IgrejadePedra_42_0(feature));
             },
         });
-        var cluster_IgrejadePedra_42 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_IgrejadePedra_42.addLayer(layer_IgrejadePedra_42);
-
         bounds_group.addLayer(layer_IgrejadePedra_42);
-        cluster_IgrejadePedra_42.addTo(map);
+        map.addLayer(layer_IgrejadePedra_42);
         function pop_CapelaSoSebastio_43(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2313,12 +2246,8 @@
                 return L.marker(latlng, style_CapelaSoSebastio_43_0(feature));
             },
         });
-        var cluster_CapelaSoSebastio_43 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_CapelaSoSebastio_43.addLayer(layer_CapelaSoSebastio_43);
-
         bounds_group.addLayer(layer_CapelaSoSebastio_43);
-        cluster_CapelaSoSebastio_43.addTo(map);
+        map.addLayer(layer_CapelaSoSebastio_43);
         function pop_MorrodoLampio_44(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2370,12 +2299,8 @@
                 return L.marker(latlng, style_MorrodoLampio_44_0(feature));
             },
         });
-        var cluster_MorrodoLampio_44 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_MorrodoLampio_44.addLayer(layer_MorrodoLampio_44);
-
         bounds_group.addLayer(layer_MorrodoLampio_44);
-        cluster_MorrodoLampio_44.addTo(map);
+        map.addLayer(layer_MorrodoLampio_44);
         function pop_Camposdefutebolantigos_45(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2427,12 +2352,8 @@
                 return L.marker(latlng, style_Camposdefutebolantigos_45_0(feature));
             },
         });
-        var cluster_Camposdefutebolantigos_45 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Camposdefutebolantigos_45.addLayer(layer_Camposdefutebolantigos_45);
-
         bounds_group.addLayer(layer_Camposdefutebolantigos_45);
-        cluster_Camposdefutebolantigos_45.addTo(map);
+        map.addLayer(layer_Camposdefutebolantigos_45);
         function pop_Camposdefutebolatuais_46(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2484,12 +2405,8 @@
                 return L.marker(latlng, style_Camposdefutebolatuais_46_0(feature));
             },
         });
-        var cluster_Camposdefutebolatuais_46 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Camposdefutebolatuais_46.addLayer(layer_Camposdefutebolatuais_46);
-
         bounds_group.addLayer(layer_Camposdefutebolatuais_46);
-        cluster_Camposdefutebolatuais_46.addTo(map);
+        map.addLayer(layer_Camposdefutebolatuais_46);
         function pop_Salesdedanaantigos_47(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2545,12 +2462,8 @@
                 return L.shapeMarker(latlng, style_Salesdedanaantigos_47_0(feature));
             },
         });
-        var cluster_Salesdedanaantigos_47 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Salesdedanaantigos_47.addLayer(layer_Salesdedanaantigos_47);
-
         bounds_group.addLayer(layer_Salesdedanaantigos_47);
-        cluster_Salesdedanaantigos_47.addTo(map);
+        map.addLayer(layer_Salesdedanaantigos_47);
         function pop_Stioarqueolgico_48(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2602,12 +2515,8 @@
                 return L.marker(latlng, style_Stioarqueolgico_48_0(feature));
             },
         });
-        var cluster_Stioarqueolgico_48 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Stioarqueolgico_48.addLayer(layer_Stioarqueolgico_48);
-
         bounds_group.addLayer(layer_Stioarqueolgico_48);
-        cluster_Stioarqueolgico_48.addTo(map);
+        map.addLayer(layer_Stioarqueolgico_48);
         function pop_CasasguardadoBoideMamo_49(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2659,12 +2568,8 @@
                 return L.marker(latlng, style_CasasguardadoBoideMamo_49_0(feature));
             },
         });
-        var cluster_CasasguardadoBoideMamo_49 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_CasasguardadoBoideMamo_49.addLayer(layer_CasasguardadoBoideMamo_49);
-
         bounds_group.addLayer(layer_CasasguardadoBoideMamo_49);
-        cluster_CasasguardadoBoideMamo_49.addTo(map);
+        map.addLayer(layer_CasasguardadoBoideMamo_49);
         function pop_CasadaantigaBenzedeira_50(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2716,12 +2621,8 @@
                 return L.marker(latlng, style_CasadaantigaBenzedeira_50_0(feature));
             },
         });
-        var cluster_CasadaantigaBenzedeira_50 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_CasadaantigaBenzedeira_50.addLayer(layer_CasadaantigaBenzedeira_50);
-
         bounds_group.addLayer(layer_CasadaantigaBenzedeira_50);
-        cluster_CasadaantigaBenzedeira_50.addTo(map);
+        map.addLayer(layer_CasadaantigaBenzedeira_50);
         function pop_CasadaChica_51(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2773,12 +2674,8 @@
                 return L.marker(latlng, style_CasadaChica_51_0(feature));
             },
         });
-        var cluster_CasadaChica_51 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_CasadaChica_51.addLayer(layer_CasadaChica_51);
-
         bounds_group.addLayer(layer_CasadaChica_51);
-        cluster_CasadaChica_51.addTo(map);
+        map.addLayer(layer_CasadaChica_51);
         function pop_LocaldaMissadaTainha_52(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2830,12 +2727,8 @@
                 return L.marker(latlng, style_LocaldaMissadaTainha_52_0(feature));
             },
         });
-        var cluster_LocaldaMissadaTainha_52 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_LocaldaMissadaTainha_52.addLayer(layer_LocaldaMissadaTainha_52);
-
         bounds_group.addLayer(layer_LocaldaMissadaTainha_52);
-        cluster_LocaldaMissadaTainha_52.addTo(map);
+        map.addLayer(layer_LocaldaMissadaTainha_52);
         function pop_Engenhosdecanadeacarantigos_53(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2891,12 +2784,8 @@
                 return L.circleMarker(latlng, style_Engenhosdecanadeacarantigos_53_0(feature));
             },
         });
-        var cluster_Engenhosdecanadeacarantigos_53 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Engenhosdecanadeacarantigos_53.addLayer(layer_Engenhosdecanadeacarantigos_53);
-
         bounds_group.addLayer(layer_Engenhosdecanadeacarantigos_53);
-        cluster_Engenhosdecanadeacarantigos_53.addTo(map);
+        map.addLayer(layer_Engenhosdecanadeacarantigos_53);
         function pop_Engenhosdefarinhademandiocaantigos_54(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -2952,12 +2841,8 @@
                 return L.circleMarker(latlng, style_Engenhosdefarinhademandiocaantigos_54_0(feature));
             },
         });
-        var cluster_Engenhosdefarinhademandiocaantigos_54 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Engenhosdefarinhademandiocaantigos_54.addLayer(layer_Engenhosdefarinhademandiocaantigos_54);
-
         bounds_group.addLayer(layer_Engenhosdefarinhademandiocaantigos_54);
-        cluster_Engenhosdefarinhademandiocaantigos_54.addTo(map);
+        map.addLayer(layer_Engenhosdefarinhademandiocaantigos_54);
         function pop_Engenhosdefarinhademandioca_55(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -3013,12 +2898,8 @@
                 return L.circleMarker(latlng, style_Engenhosdefarinhademandioca_55_0(feature));
             },
         });
-        var cluster_Engenhosdefarinhademandioca_55 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Engenhosdefarinhademandioca_55.addLayer(layer_Engenhosdefarinhademandioca_55);
-
         bounds_group.addLayer(layer_Engenhosdefarinhademandioca_55);
-        cluster_Engenhosdefarinhademandioca_55.addTo(map);
+        map.addLayer(layer_Engenhosdefarinhademandioca_55);
         function pop_Ranchosdepescafluvialantigos_56(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -3070,12 +2951,8 @@
                 return L.marker(latlng, style_Ranchosdepescafluvialantigos_56_0(feature));
             },
         });
-        var cluster_Ranchosdepescafluvialantigos_56 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Ranchosdepescafluvialantigos_56.addLayer(layer_Ranchosdepescafluvialantigos_56);
-
         bounds_group.addLayer(layer_Ranchosdepescafluvialantigos_56);
-        cluster_Ranchosdepescafluvialantigos_56.addTo(map);
+        map.addLayer(layer_Ranchosdepescafluvialantigos_56);
         function pop_Ranchosdepescaantigos_57(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -3127,12 +3004,8 @@
                 return L.marker(latlng, style_Ranchosdepescaantigos_57_0(feature));
             },
         });
-        var cluster_Ranchosdepescaantigos_57 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Ranchosdepescaantigos_57.addLayer(layer_Ranchosdepescaantigos_57);
-
         bounds_group.addLayer(layer_Ranchosdepescaantigos_57);
-        cluster_Ranchosdepescaantigos_57.addTo(map);
+        map.addLayer(layer_Ranchosdepescaantigos_57);
         function pop_Ranchosdepescaatuais_58(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -3184,12 +3057,8 @@
                 return L.marker(latlng, style_Ranchosdepescaatuais_58_0(feature));
             },
         });
-        var cluster_Ranchosdepescaatuais_58 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Ranchosdepescaatuais_58.addLayer(layer_Ranchosdepescaatuais_58);
-
         bounds_group.addLayer(layer_Ranchosdepescaatuais_58);
-        cluster_Ranchosdepescaatuais_58.addTo(map);
+        map.addLayer(layer_Ranchosdepescaatuais_58);
         function pop_Principaisdunasdevigiaatuais_59(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -3241,12 +3110,8 @@
                 return L.marker(latlng, style_Principaisdunasdevigiaatuais_59_0(feature));
             },
         });
-        var cluster_Principaisdunasdevigiaatuais_59 = new L.MarkerClusterGroup({showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 2});
-        cluster_Principaisdunasdevigiaatuais_59.addLayer(layer_Principaisdunasdevigiaatuais_59);
-
         bounds_group.addLayer(layer_Principaisdunasdevigiaatuais_59);
-        cluster_Principaisdunasdevigiaatuais_59.addTo(map);
+        map.addLayer(layer_Principaisdunasdevigiaatuais_59);
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
@@ -3257,8 +3122,6 @@
         .className += ' fa fa-search';
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
-        var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/Principaisdunasdevigiaatuais_59.png" /> Principais dunas de vigia atuais': cluster_Principaisdunasdevigiaatuais_59,'<img src="legend/Ranchosdepescaatuais_58.png" /> Ranchos de pesca atuais': cluster_Ranchosdepescaatuais_58,'<img src="legend/Ranchosdepescaantigos_57.png" /> Ranchos de pesca antigos': cluster_Ranchosdepescaantigos_57,'<img src="legend/Ranchosdepescafluvialantigos_56.png" /> Ranchos de pesca fluvial antigos': cluster_Ranchosdepescafluvialantigos_56,'<img src="legend/Engenhosdefarinhademandioca_55.png" /> Engenhos de farinha de mandioca': cluster_Engenhosdefarinhademandioca_55,'<img src="legend/Engenhosdefarinhademandiocaantigos_54.png" /> Engenhos de farinha de mandioca antigos': cluster_Engenhosdefarinhademandiocaantigos_54,'<img src="legend/Engenhosdecanadeacarantigos_53.png" /> Engenhos de cana-de-açúcar antigos': cluster_Engenhosdecanadeacarantigos_53,'<img src="legend/LocaldaMissadaTainha_52.png" /> Local da Missa da Tainha': cluster_LocaldaMissadaTainha_52,'<img src="legend/CasadaChica_51.png" /> Casa da Chica': cluster_CasadaChica_51,'<img src="legend/CasadaantigaBenzedeira_50.png" /> Casa da antiga Benzedeira': cluster_CasadaantigaBenzedeira_50,'<img src="legend/CasasguardadoBoideMamo_49.png" /> Casas guarda do Boi de Mamão': cluster_CasasguardadoBoideMamo_49,'<img src="legend/Stioarqueolgico_48.png" /> Sítio arqueológico': cluster_Stioarqueolgico_48,'<img src="legend/Salesdedanaantigos_47.png" /> Salões de dança antigos': cluster_Salesdedanaantigos_47,'<img src="legend/Camposdefutebolatuais_46.png" /> Campos de futebol atuais': cluster_Camposdefutebolatuais_46,'<img src="legend/Camposdefutebolantigos_45.png" /> Campos de futebol antigos': cluster_Camposdefutebolantigos_45,'<img src="legend/MorrodoLampio_44.png" /> Morro do Lampião': cluster_MorrodoLampio_44,'<img src="legend/CapelaSoSebastio_43.png" /> Capela São Sebastião': cluster_CapelaSoSebastio_43,'<img src="legend/IgrejadePedra_42.png" /> Igreja de Pedra': cluster_IgrejadePedra_42,'<img src="legend/Cemitrio_41.png" /> Cemitério': cluster_Cemitrio_41,'<img src="legend/HangardoCampodeAviao_40.png" /> Hangar do Campo de Aviação': cluster_HangardoCampodeAviao_40,'<img src="legend/Cabosubmarino_39.png" /> Cabo submarino': cluster_Cabosubmarino_39,'<img src="legend/PontedoOdorico_38.png" /> Ponte do Odorico': cluster_PontedoOdorico_38,'<img src="legend/ColgioBrigadeiroEduardoGomez_37.png" /> Colégio Brigadeiro Eduardo Gomez': cluster_ColgioBrigadeiroEduardoGomez_37,'<img src="legend/Outrasescolascolgios_36.png" /> Outras escolas / colégios': cluster_Outrasescolascolgios_36,'<img src="legend/Vendasmercadosmaiscitados_35.png" /> Vendas / mercados mais citados': cluster_Vendasmercadosmaiscitados_35,'<img src="legend/AntigoPaubrasil_34.png" /> Antigo Pau-brasil': cluster_AntigoPaubrasil_34,'<img src="legend/Lanamentodeesgoto_33.png" /> Lançamento de esgoto': cluster_Lanamentodeesgoto_33,'<img src="legend/Ranchodepescaincendiado_32.png" /> Rancho de pesca incendiado': cluster_Ranchodepescaincendiado_32,'<img src="legend/Altaconcentraoturstica_31.png" /> Alta concentração turística': cluster_Altaconcentraoturstica_31,'<img src="legend/Altaconcentraodebanhistas_30.png" /> Alta concentração de banhistas': cluster_Altaconcentraodebanhistas_30,'<img src="legend/RompimentodalagoaartificialdaCASAN_29.png" /> Rompimento da lagoa artificial da CASAN': cluster_RompimentodalagoaartificialdaCASAN_29,'<img src="legend/DespejodeesgotonaLagoadaConceio_28.png" /> Despejo de esgoto na Lagoa da Conceição': cluster_DespejodeesgotonaLagoadaConceio_28,'<img src="legend/Fontesdguaantigas_27.png" /> Fontes d\'água antigas': cluster_Fontesdguaantigas_27,'<img src="legend/CaminhodaBandeiradoDivino_26.png" /> Caminho da Bandeira do Divino': layer_CaminhodaBandeiradoDivino_26,'<img src="legend/Picadasdeacessopraia_25.png" /> Picadas de acesso à praia': layer_Picadasdeacessopraia_25,'<img src="legend/PistasdoCampodeAviao_24.png" /> Pistas do Campo de Aviação': layer_PistasdoCampodeAviao_24,'<img src="legend/Caminhoshistricos_23.png" /> Caminhos históricos': layer_Caminhoshistricos_23,'<img src="legend/Delimitaolegalvigentedapescaartesanaldatainha800mdaCosta_22.png" /> Delimitação legal vigente da pesca artesanal da tainha (800m da Costa)': layer_Delimitaolegalvigentedapescaartesanaldatainha800mdaCosta_22,'<img src="legend/Antigadelimitaolegalparapescaartesanaldatainha1500mdaCosta_21.png" /> Antiga delimitação legal para pesca artesanal da tainha (1.500m da Costa)': layer_Antigadelimitaolegalparapescaartesanaldatainha1500mdaCosta_21,'<img src="legend/ProjetodoEmissrioSubmarinoparalanamentodeesgoto_20.png" /> Projeto do Emissário Submarino para lançamento de esgoto': layer_ProjetodoEmissrioSubmarinoparalanamentodeesgoto_20,'<img src="legend/Picadascomacessopraiarestringidoouproibido_19.png" /> Picadas com acesso à praia restringido ou proibido': layer_Picadascomacessopraiarestringidoouproibido_19,'<img src="legend/RotadeembarcaesdeturismolegalizadasparaaIlhadoCampeche_18.png" /> Rota de embarcações de turismo legalizadas para a Ilha do Campeche': layer_RotadeembarcaesdeturismolegalizadasparaaIlhadoCampeche_18,'<img src="legend/Rios_17.png" /> Rios': layer_Rios_17,'<img src="legend/reaatualdapescaartesanaldatainha_16.png" /> Área atual da pesca artesanal da tainha': layer_reaatualdapescaartesanaldatainha_16,'<img src="legend/readeriscodurantearessaca_15.png" /> Área de risco durante a ressaca': layer_readeriscodurantearessaca_15,'<img src="legend/Roasdemandiocaantigas_14.png" /> Roças de mandioca antigas': layer_Roasdemandiocaantigas_14,'<img src="legend/readoMorrodoLampio_13.png" /> Área do Morro do Lampião': layer_readoMorrodoLampio_13,'<img src="legend/ParqueNaturalMunicipaldasDunasdaLagoadaConceio_12.png" /> Parque Natural Municipal das Dunas da Lagoa da Conceição': layer_ParqueNaturalMunicipaldasDunasdaLagoadaConceio_12,'<img src="legend/ParquedoMorrodasPedras_11.png" /> Parque do Morro das Pedras': layer_ParquedoMorrodasPedras_11,'<img src="legend/PatrimnioArqueolgicoePaisagsticoNacionalIlhadoCampeche_10.png" /> Patrimônio Arqueológico e Paisagístico Nacional - Ilha do Campeche': layer_PatrimnioArqueolgicoePaisagsticoNacionalIlhadoCampeche_10,'<img src="legend/DunasdaJoaquina_9.png" /> Dunas da Joaquina': layer_DunasdaJoaquina_9,'<img src="legend/ReivindicaodereaparaParqueCulturaldoCampechePACUCA_8.png" /> Reivindicação de área para Parque Cultural do Campeche - PACUCA': layer_ReivindicaodereaparaParqueCulturaldoCampechePACUCA_8,'<img src="legend/ReivindicaoparadelimitaodoCorredorEcolgicoMorrodoLampioPacuca_7.png" /> Reivindicação para delimitação do Corredor Ecológico Morro do Lampião-Pacuca': layer_ReivindicaoparadelimitaodoCorredorEcolgicoMorrodoLampioPacuca_7,'<img src="legend/readeexploraoimobiliria_6.png" /> Área de exploração imobiliária': layer_readeexploraoimobiliria_6,'<img src="legend/reademinerao_5.png" /> Área de mineração': layer_reademinerao_5,'<img src="legend/readepescapredatriaporatuneiros_4.png" /> Área de pesca predatória por atuneiros': layer_readepescapredatriaporatuneiros_4,'<img src="legend/Lagoas_3.png" /> Lagoas': layer_Lagoas_3,'<img src="legend/DistritoAdministrativodoCampeche_2.png" /> Distrito Administrativo do Campeche': layer_DistritoAdministrativodoCampeche_2,"Wikimedia Maps": layer_WikimediaMaps_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
         setBounds();
         var i = 0;
         layer_reademinerao_5.eachLayer(function(layer) {
